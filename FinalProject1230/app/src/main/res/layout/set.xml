@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgLogo"
+        android:text="先選主餐"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/tv"
+        android:layout_alignEnd="@+id/tv" />
+
+</RelativeLayout>
